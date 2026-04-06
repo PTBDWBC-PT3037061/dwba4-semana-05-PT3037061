@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/icons/favicon.ico" type="image/x-icon" />
+    <title>Contato - IFSP</title>
+    <style>
+      body {
+        font-family: "Times New Roman", Times, serif;
+        margin: 40px;
+      }
+      nav.menu-topo {
+        text-align: right;
+        margin-bottom: 20px;
+      }
+      nav.menu-topo a {
+        text-decoration: underline;
+        color: #551a8b;
+        font-size: 0.95em;
+        text-transform: uppercase;
+      }
+      ul.form-list {
+        list-style-type: disc;
+        padding-left: 40px;
+      }
+      ul.form-list li {
+        margin-bottom: 10px;
+      }
+      fieldset {
+        padding: 10px;
+        border: 1px solid #ccc;
+        margin-top: 5px;
+        width: fit-content;
+      }
+      legend {
+        padding: 0 5px;
+        font-size: 0.9em;
+      }
+      footer {
+        font-size: 0.9em;
+        margin-top: 20px;
+      }
+      .facebook-icon {
+        width: 40px;
+        margin-bottom: 15px;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="menu-topo">
+        <a href="index.html">HOME</a> | <a href="eventos.html">EVENTOS</a> |
+        <a href="contato.html">CONTATO</a> | <a href="sobre.html">SOBRE</a> |
+        <a href="entrar.html">ENTRAR</a>
+      </nav>
+      <img
+        src="../assets/images/Logo.jpg"
+        alt="Instituto Federal São Paulo"
+        style="margin-bottom: 30px"
+      />
+    </header>
+
+    <main>
+      <h2>Mande uma mensagem</h2>
+
+      <form action="#" method="post">
+        <ul class="form-list">
+          <li>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" />
+          </li>
+          <li>
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" name="email" />
+          </li>
+          <li>
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" />
+            <span style="font-size: 0.85em">(99) 99999-9999</span>
+          </li>
+          <li>
+            <label for="assunto">Assunto</label>
+            <select id="assunto" name="assunto">
+              <option value="">-- Selecione --</option>
+              <option value="duvida">Dúvida</option>
+              <option value="sugestao">Sugestão</option>
+            </select>
+          </li>
+          <li>
+            <label for="mensagem">Mensagem</label><br />
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              rows="4"
+              cols="30"
+            ></textarea>
+          </li>
+          <li>
+            <fieldset>
+              <legend>Opções de Resposta</legend>
+              <input
+                type="checkbox"
+                id="resp_email"
+                name="opcao_resposta"
+                value="email"
+              />
+              <label for="resp_email">E-Mail</label>
+              <input
+                type="checkbox"
+                id="resp_telefone"
+                name="opcao_resposta"
+                value="telefone"
+              />
+              <label for="resp_telefone">Telefone</label>
+            </fieldset>
+          </li>
+          <li>
+            <input type="submit" value="Enviar" />
+          </li>
+        </ul>
+      </form>
+    </main>
+
+    <footer>
+      <a href="https://www.facebook.com/ifsppirituba" target="_blank">
+        <img
+          src="../assets/images/facebook.png"
+          alt="Facebook IFSP"
+          class="facebook-icon"
+        />
+      </a>
+      <p>
+        IFSP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP:
+        05110-000 - São Paulo/SP - Contato: (011) 2504-0100
+      </p>
+    </footer>
+  </body>
+</html>
