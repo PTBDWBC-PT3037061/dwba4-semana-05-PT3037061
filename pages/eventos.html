@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/icons/favicon.ico" type="image/x-icon" />
+    <title>Eventos - IFSP</title>
+    <style>
+      body {
+        font-family: "Times New Roman", Times, serif;
+        margin: 40px;
+      }
+      nav.menu-topo {
+        text-align: right;
+        margin-bottom: 20px;
+      }
+      nav.menu-topo a {
+        text-decoration: underline;
+        color: #551a8b;
+        font-size: 0.95em;
+        text-transform: uppercase;
+      }
+      fieldset {
+        margin-bottom: 20px;
+        padding: 15px;
+        border: 1px solid #ccc;
+      }
+      legend {
+        padding: 0 5px;
+        font-size: 0.9em;
+      }
+      .form-group {
+        margin-bottom: 10px;
+      }
+      .form-group label {
+        display: inline-block;
+        width: 140px;
+        font-size: 0.9em;
+      }
+      .form-group input[type="text"],
+      .form-group input[type="email"],
+      .form-group input[type="tel"],
+      .form-group input[type="password"],
+      .form-group select {
+        padding: 2px;
+        width: 200px;
+      }
+      .radio-group label {
+        width: auto;
+        margin-right: 15px;
+      }
+      .botoes {
+        margin-top: 15px;
+        margin-bottom: 50px;
+      }
+      footer {
+        font-size: 0.9em;
+        margin-top: 20px;
+        border-top: none;
+      }
+      .facebook-icon {
+        width: 40px;
+        margin-bottom: 15px;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="menu-topo">
+        <a href="index.html">HOME</a> | <a href="eventos.html">EVENTOS</a> |
+        <a href="contato.html">CONTATO</a> | <a href="sobre.html">SOBRE</a> |
+        <a href="entrar.html">ENTRAR</a>
+      </nav>
+      <img
+        src="../assets/images/Logo.jpg"
+        alt="Instituto Federal São Paulo"
+        style="margin-bottom: 30px"
+      />
+    </header>
+
+    <main>
+      <h2>Inscreva-se</h2>
+      <form action="#" method="post">
+        <fieldset>
+          <div class="form-group">
+            <label for="evento">Evento</label>
+            <select id="evento" name="evento">
+              <option value="">-- Selecione --</option>
+              <option value="voe">Voe sem asas</option>
+              <option value="junina">Festa junina</option>
+              <option value="tecnologia">Semana de tecnologia</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Informações de Acesso</legend>
+          <div class="form-group">
+            <label for="usuario">Usuário</label>
+            <input type="text" id="usuario" name="usuario" value="username" />
+          </div>
+          <div class="form-group">
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" value="12345" />
+          </div>
+          <div class="form-group">
+            <label for="confirma_senha">Confirme a Senha</label>
+            <input
+              type="password"
+              id="confirma_senha"
+              name="confirma_senha"
+              value="12345"
+            />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Informações Pessoais</legend>
+          <div class="form-group">
+            <label for="nome">Nome Completo</label>
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              value="Professor Fabio Teixeira"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value="fabio.teixeira@ifsp.edu.br"
+            />
+          </div>
+          <div class="form-group">
+            <label for="celular">Celular</label>
+            <input type="tel" id="celular" name="celular" />
+            <span style="font-size: 0.85em">(99) 99999-9999</span>
+          </div>
+
+          <fieldset
+            style="border: 1px solid #ccc; padding: 10px; margin-top: 10px"
+          >
+            <legend>Sexo</legend>
+            <div class="form-group radio-group" style="margin-bottom: 0">
+              <label for="masculino">Masculino</label>
+              <input
+                type="radio"
+                id="masculino"
+                name="sexo"
+                value="masculino"
+              />
+              <label for="feminino">Feminino</label>
+              <input type="radio" id="feminino" name="sexo" value="feminino" />
+            </div>
+          </fieldset>
+
+          <div class="form-group" style="margin-top: 15px">
+            <label for="nascimento">Data de Nascimento</label>
+            <input type="date" id="nascimento" name="nascimento" />
+          </div>
+          <div class="form-group">
+            <label for="cor">Cor Favorita</label>
+            <input
+              type="color"
+              id="cor"
+              name="cor"
+              value="#000000"
+              style="width: 50px"
+            />
+          </div>
+          <div class="form-group">
+            <label for="github">Perfil no Github</label>
+            <input type="text" id="github" name="github" />
+          </div>
+        </fieldset>
+
+        <div class="botoes">
+          <input type="submit" value="Inscrever" />
+          <input type="reset" value="Limpar" />
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <a href="https://www.facebook.com/ifsppirituba" target="_blank">
+        <img
+          src="../assets/images/facebook.png"
+          alt="Facebook IFSP"
+          class="facebook-icon"
+        />
+      </a>
+      <p>
+        IFSP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP:
+        05110-000 - São Paulo/SP - Contato: (011) 2504-0100
+      </p>
+    </footer>
+  </body>
+</html>
